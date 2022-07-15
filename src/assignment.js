@@ -4,7 +4,7 @@ const assignment = {};
 // ========================
 
 
-/**
+/*
  * Challenge - 1
  * 
  * Calculate and return the sum of the numbers in an array.
@@ -14,8 +14,19 @@ const assignment = {};
  * @returns number the sum of the numbers
  */
 function sumOfNumbers(arrayOfNumbers) {
-    return arrayOfNumbers.length;
+    let sum = 0
+    
+    for (let i = 0; i < arrayOfNumbers.length; i++) {
+        const number = arrayOfNumbers[i];
+
+        sum += number
+    }
+
+    return sum
 }
+assignment.sumOfNumbers = sumOfNumbers;
+   /* return arrayOfNumbers.length;*/
+
 // assignment.sumOfNumbers = sumOfNumbers;
 
 /**
@@ -28,9 +39,20 @@ function sumOfNumbers(arrayOfNumbers) {
  * @returns number the count of even numbers
  */
 function countEvenNumbers(arrayOfNumbers) {
-    return arrayOfNumbers.length;
+    var counter = 0
+
+    for (let i = 0; i < arrayOfNumbers.length; i++) {
+        const number = arrayOfNumbers[i];
+
+        if (number%2 == 0) {
+            console.log(number)
+            counter ++
+        }
+    }
+    
+    return counter
 }
-// assignment.countEvenNumbers = countEvenNumbers;
+ assignment.countEvenNumbers = countEvenNumbers;
 
 /**
  * Challenge - 3
